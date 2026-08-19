@@ -27,8 +27,7 @@ public class FirstnLastWloop{
     public static void main(String argc[])
     {
         int n = 98562;
-        System.out.println(FirstnLastWloop(n) + " "
-        + lastDigit(n));
+        System.out.println("First no is " + FirstnLastWloop(n) + " \n "+ "Last no is " + lastDigit(n));
     }
 }
 
