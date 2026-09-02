@@ -7,19 +7,11 @@ public class CountDigits {
         System.out.print("Enter a number: ");
         int num = sc.nextInt();
 
-        int count = 0;
-        int temp = Math.abs(num); // handles negative numbers
-
-        if (temp == 0) {
-            count = 1;
-        } else {
-            while (temp > 0) {
-                count++;
-                temp = temp / 10;
-            }
+        int count =0;
+        while(num!=0){
+            num=num/10;
+            ++count;
         }
-
-        System.out.println("Number of digits = " + count);
-        sc.close();
+        System.out.println(count);
     }
 }
